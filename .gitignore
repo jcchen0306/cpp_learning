@@ -1,0 +1,6 @@
+*.zip
+*.ffs_db
+CMakeLists.txt.user
+*.avi
+*.weights
+build/
