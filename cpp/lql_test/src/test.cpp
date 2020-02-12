@@ -362,13 +362,22 @@ git基本概念：
 
 13) git log中显示的 HEAD，指向某一个分支的某一次提交。
 
-14）github 官方推荐的push 流程
+14）github 官方推荐的push 流程 (第一次创建github远程仓库的push到远程的流程)
 echo "# cjc-test" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin git@github.com:jcchen0306/cjc-test.git
 git push -u origin master
+
+
+15) 将本地已有仓库，push到远程已有仓库流程
+
+git add .
+git commit -m "这里是本次版本的改动说明"
+git push github_origin master
+
+
 
 */
 //一元二次方程求根，通过指针返回实数解
