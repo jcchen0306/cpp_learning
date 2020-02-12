@@ -307,6 +307,17 @@ int*** p2; p2=&p1; *p2 拿到的是p1的存储的地址，**p2拿到的值p里头存储的地址， ***
 
                     电脑1       电脑2           电脑3        电脑4
 
+
+ubuntu18.04翻墙：
+(1)设置：
+   在系统的 setttings-> Network -> Network Proxy 选择 manual
+   在http Proxy 填入 127.0.0.1， 后面端口中填入12333
+   在Socks Host 填入 127.0.0.1， 后面端口中填入1080
+
+(2)采用代理工具 electron-ssr-0.2.6, 运行 ./electron-ssr
+(3)chrome 浏览器的代理插件选择 system proxy
+(4)关闭翻墙，在系统的 setttings-> Network -> Network Proxy 选择 disabled；chrome 浏览器的代理插件选择 direct
+
 标量： 无方向  体重  腰围  身高  金额
 矢量： 有方向  位移  力   速度
 矢量全部用坐标表示，起点与终点之差的量  有方向 有大小，但无作用点限制。
