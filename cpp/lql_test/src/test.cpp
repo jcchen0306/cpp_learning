@@ -448,6 +448,21 @@ git不知道保留哪个。
     git reset --hard HEAD^
     git push github_origin master --force
 
+
+(18) git使用重要原则：
+     1) 要使用 git log          //显示当前分支的提交记录
+              git log --graph  //用图形形式显示当前分支记录
+              git status       //显示当前分支和工作区状态
+              git branch -a    //显示所有的分支
+        越频繁越好。
+
+     2）工作区的改动，要么提交  git add .
+                            git commit -m "版本提交说明"
+                   要么撤销  git reset --hard   //删除工作区所有的未提交的改动
+        完成工作区的两大要求后，才能checkout。
+
+     3） 不是在某条分支最后一个节点提交改动后（此时就会有分叉），一定要先对该提交建立新分支，才能checkout 到其他分支。
+
 */
 //一元二次方程求根，通过指针返回实数解
 /*
