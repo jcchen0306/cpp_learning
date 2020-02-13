@@ -442,8 +442,11 @@ git不知道保留哪个。
                       git commit -m "合并冲突解决"
 
 查看所有分支： git branch -a
-查看某个分支的提交： git log --graph
+查看当前分支的提交（可视化图形）： git log --graph
 
+(17) 如果已经推送到远程库，而本地撤消了某个提交，可以强制push到远程库。
+    git reset --hard HEAD^
+    git push github_origin master --force
 
 */
 //一元二次方程求根，通过指针返回实数解
