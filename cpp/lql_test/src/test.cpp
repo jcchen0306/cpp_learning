@@ -506,7 +506,27 @@ git diff --cached
 git diff --staged：显示暂存区(已add但未commit文件)和最后一次commit(HEAD)之间的所有不相同文件的增删改
     git diff HEAD：显示工作目录(已track但未add文件)和暂存区(已add但未commit文件)与最后一次commit之间的的所有不相同文件的增删改
 
+(20) windows 10下使用git gui for win 的git bash 来使用git，以及git pull的使用。
+     git bash的明亮行显示中文的设置：
+     terminal内右键单击->options->text->font(选consolas，12pt);locale(选zh_CN);Character set(选UTF-8)
+     windows 10端要先复制unbuntu下对应在github添加的密钥组(两个文件id_rsa和id_rsa.pub)到 C:\Users\Jiacai_Chen\.ssh路径下
+     然后下载代码：
+     git clone git@github.com:jcchen0306/cpp_learning.git
 
+     设置远程库本地别名：
+     git remote remove origin
+     git remote add github_origin git@github.com:jcchen0306/cpp_learning.git
+
+     设置本地用户信息：
+     git config --global user.name "jcchen0306"
+     git config --global user.email "2574533980@qq.com"
+
+     windows端下修改代码，并提交，然后push到远程端，到ubuntu下pull远程端的master分支。
+     git pull github_origin master //pull远程端的master分支，相当于 git fetch 和git merge。
+
+     等价于：
+     git fetch github_origin master //从远程主机的master分支拉取最新内容，取回更新后，会返回一个FETCH_HEAD ，指的是某个branch在服务器上的最新状态
+     git merge FETCH_HEAD          //将拉取下来的最新内容合并到当前所在的分支中
 
 */
 //一元二次方程求根，通过指针返回实数解
