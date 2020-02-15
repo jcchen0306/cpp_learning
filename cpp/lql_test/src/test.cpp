@@ -528,6 +528,65 @@ git diff --staged：显示暂存区(已add但未commit文件)和最后一次commit(HEAD)之间的所
      git fetch github_origin master //从远程主机的master分支拉取最新内容，取回更新后，会返回一个FETCH_HEAD ，指的是某个branch在服务器上的最新状态
      git merge FETCH_HEAD          //将拉取下来的最新内容合并到当前所在的分支中
 
+(21) windows和linux下常用软件和所属公司
+     Microsoft(微软)：全球最大，最早的软件公司
+                    Office(办公套件）:
+                                    word: 文档，文字排版软件
+                                    Excel: 表格，报表处理软件
+                                    PowerPoint: ppt，报告，汇报展示软件
+                                    visio: 流程图，矢量图处理软件
+                    操作系统：
+                            windows xp: 2000年左右的操作系统
+                            windows 7 : 2010年左右的操作系统
+                            windows 10: 2015年左右开始的操作系统
+
+                    软件开发：
+                            visual studio: windows系统上的最好的软件开发工具，简称集成开发环境（integrated development environment，缩写IDE），目前最新版本是
+                                           2019。分社区办（community，免费） 和 企业版（enterprise，收费）。可以用来写c/c++、python、c#、Android等语言的项目
+                            visual studio code: 开源的软件开发工具，2017年左右开始的，免费，正在高速成长。可以支持远程登录开发。
+
+     Nokia(诺基亚)：全球知名的嵌入式设备开发商，尤其是手机。以及嵌入式设备上的图形软件系统，以Qt图形系统为主要产品。
+                  软件开发:
+                         Qt: Qt图形库，和Qt c/c++ 集成开发环境（IDE）。不自带编译器和调试器。社区版不收费，企业版收费。（linux下相同）
+
+     Adobe: 全球最大的多媒体处理软件供应商，所有软件全部收费。
+            Adobe Acrobat DC：pdf编辑软件
+            Adobe Dreamweaver: 网页设计软件
+            Adobe Illustrator: 矢量图设计软件
+            Adobe Lightroom: 单反相机原始格式数据处理软件（如.nef格式）
+            Adobe photoshop: 位图处理软件
+            Adobe premiere Pro: 视频处理软件
+
+     anaconda: 免费，python虚拟环境管理软件 （linux下相同）
+
+     pycharm: python开发软件（社区版不收费，企业版收费），不带python解释器。 （linux下相同）
+
+     eclipse java：java常用的开发软件，不带java虚拟机，分标准版（standard edition，SE）和企业版（enterprise edition，EE）,不收费。（linux下相同）
+
+     MyEclipse：java网页项目全栈开发工具，收费。（linux下相同）
+
+     freefileSync: 文件同步软件，免费。（linux下相同）
+
+     git：版本控制软件，免费。（linux下相同）
+
+     Git for Windows：windows下的git版本图形化工具。
+
+     wps: 中国金山软件公司开发的办公套件。个人版不收费，特殊服务收费。（linux下相同）
+          word： 文档处理，相当于Microsoft的word
+          presentation： 汇报展示，相当于Microsoft的 PowerPoint
+          spread sheet: 表格，相当于Microsoft的 Excel
+          pdf: pdf 阅读
+
+     MobaXterm：windows下的远程工具。
+
+     cmake：c/c++项目管理工具，用来解析CMakeLists.txt，解析项目头文件和库文件依赖。开源，不收费。（linux下相同）
+
+     cmake-gui：c/c++项目管理工具，用来解析CMakeLists.txt，解析项目头文件和库文件依赖，图形化配置项目参数。开源，不收费。（linux下相同）
+               windows下还可以将CMakeLists.txt项目转化为visual studio的 .sln 项目。
+
+     notepad++: windows下的txt文档编辑软件，功能比windows自带的文本编辑器强大。开源，免费。
+
+     google chrome: google 公司的浏览器软件，比windows自带的IE和edge好用。免费。（linux下相同）
 */
 //一元二次方程求根，通过指针返回实数解
 /*
