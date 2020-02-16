@@ -1,0 +1,25 @@
+Git 练习目标：
+1) 建立3个以上的不同的branch。 可以checkout到某一个提交，然后 git branch <branch-name>; 或者直接 git branch <branch-name> <commit-id>
+                       O--------->O-------->O
+                      /                      \
+                     /                        \ 
+   O----->O-------->O------------->O---------->O
+           \                      /
+            \                    /
+             O------->O--------->O
+2)在不同的地方合并，并删除已经被合并的无用的分支名。git branch -d <branch-name>
+3)建立远程库，并在本地命别名，然后push。 git remote add <local-name> <remote-url>; git push <local-name> <branch-name>
+4)切换到另一个系统，在新系统下获取远程分支，从无到有。 git clone <remote-url>
+5)改动并提交，并push。git push <local-name> <branch-name>。git clone下来的远程库，自带了本地别名origin，可以通过 git config --list 查看，
+  然后通过 git remote remove <local-name>，然后自己再命一个本地名字。远程库本地别名在git log可以看到。
+6)再回到原系统，拉取远程库较新的提交。 git pull <local-name> <branch-name>
+7)练习丢掉工作区不想要的改动。 git reset --hard
+8)练习丢掉已有的提交，并push到远程库。 git reset --hard HEAD^  , git push <local-name> <branch-name> --force
+
+
+windows软件操作习题：
+1) windows 下office套件操作（word excel PowerPoint visio）
+2) windows 下git仓库的图像化查阅
+3) windows 下IDE visual studio 2019 和 Qt 的练习
+4) windows 下文件本地同步软件freefilesync的使用  
+

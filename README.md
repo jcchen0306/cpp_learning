@@ -7,3 +7,5 @@
 2020.2.14 添加了git的高级工作模式，git reset 三种参数， git diff， git stash，git pull，添加windows 10下使用 git gui for win的git bash来管理git repository
 
 2020.2.15 添加了windows 和 Ubuntu下常用软件的简介。
+
+2020.2.16 添加了练习题文件 《操作练习题.txt》
