@@ -7,7 +7,8 @@ Git 练习目标：
            \                      /
             \                    /
              O------->O--------->O
-2)在不同的地方合并，并删除已经被合并的无用的分支名。git branch -d <branch-name>
+2)在不同的地方合并，并删除已经被合并的无用的分支名，将B分支合并到A分支。git checkout <branch-name-A>; git merge <branch-name-B>; 
+   git branch -d <branch-name-B>
 3)建立远程库，并在本地命别名，然后push。 git remote add <local-name> <remote-url>; git push <local-name> <branch-name>
 4)切换到另一个系统，在新系统下获取远程分支，从无到有。 git clone <remote-url>
 5)改动并提交，并push。git push <local-name> <branch-name>。git clone下来的远程库，自带了本地别名origin，可以通过 git config --list 查看，
