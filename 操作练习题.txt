@@ -12,7 +12,8 @@ Git 练习目标：
 3)建立远程库，并在本地命别名，然后push。 git remote add <local-name> <remote-url>; git push <local-name> <branch-name>
 4)切换到另一个系统，在新系统下获取远程分支，从无到有。 git clone <remote-url>
 5)改动并提交，并push。git push <local-name> <branch-name>。git clone下来的远程库，自带了本地别名origin，可以通过 git config --list 查看，
-  然后通过 git remote remove <local-name>，然后自己再命一个本地名字。远程库本地别名在git log可以看到。
+  然后通过 git remote remove <local-name>，然后自己再命一个本地名字。远程库本地别名在git log可以看到。直接更改远程库在本地的别名，
+  git remote rename <current-name>  <new-name>
 6)再回到原系统，拉取远程库较新的提交。 git pull <local-name> <branch-name>
 7)练习丢掉工作区不想要的改动。 git reset --hard
 8)练习丢掉已有的提交，并push到远程库。 git reset --hard HEAD^  , git push <local-name> <branch-name> --force
