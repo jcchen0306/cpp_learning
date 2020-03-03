@@ -1,0 +1,50 @@
+ubuntu18.04
+
+1、安装最新的nodejs
+   curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+
+   检查对应的版本：
+   node -v 输出 v13.9.0
+   npm -v 输出  6.13.7
+   
+   electron版本
+   http://npm.taobao.org/mirrors/electron/v8.0.3/electron-v8.0.3-linux-x64.zip
+
+2、下载electron demo 项目
+   git clone https://github.com/electron/electron-quick-start
+   cd electron-quick-start
+   npm install
+   npm start
+
+3、由于无法访问美国的服务器，无法下载electron，上一步的npm install 会卡住
+   解决连接
+   https://www.jianshu.com/p/d5a85f0f7e50       先更改安装npm包的软件源地址
+       npm config set registry https://registry.npm.taobao.org
+       vi   ~/.npmrc
+           填入如下配置：
+                 registry=https://registry.npm.taobao.org
+                 sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+                 phantomjs_cdnurl=http://npm.taobao.org/mirrors/phantomjs
+                 electron_mirror=http://npm.taobao.org/mirrors/electron/
+   
+    由于软件自动下载electron的名称是 https://npm.taobao.org/mirrors/electron/v8.0.3/electron-v8.0.3-linux-x64.zip
+    而 淘宝 npm软件源的实际url是     https://npm.taobao.org/mirrors/electron/8.0.3/electron-v8.0.3-linux-x64.zip
+    地址中少一v
+
+    更改办法参考连接
+    https://segmentfault.com/a/1190000021424025
+    npm install失败后，修改 electron-quick-start/node_modules/@electron/get/dist/cjs/artifact-utils.js 文件中的
+
+        var path = mirrorVar('customDir', opts, details.version).replace('{{ version }}', details.version.replace(/^v/, ''));    由const path 改为var path 
+        path = path.replace("v","");          添加此行
+    
+4、修改项目的package.json
+   在electron-quick-start项目的package.json 的script里头加入如下行
+   "install": "set ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/ && node ./node_modules/electron/install.js",
+  
+5、在本项目空间中安装局部依赖
+   npm run install
+   
+   然后运行
+   npm run start
