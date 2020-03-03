@@ -34,6 +34,9 @@ void Insert_one_node(struct studentNode* head,int PositionToInsert,int InsertId)
 //打印链表所有节点的id
 void Print_all_node(struct studentNode* head);
 
+//反转链表
+void inverseList(struct studentNode** head);
+
 //删除所有节点
 void Delete_all_node(struct studentNode** head);
 

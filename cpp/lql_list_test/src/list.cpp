@@ -83,6 +83,30 @@ void Print_all_node(struct studentNode* head)
     }
 }
 
+void inverseList(struct studentNode** head)
+{
+    struct studentNode* p1;
+    struct studentNode* p2;
+    int headFlag = 1;
+
+    p1=(*head)->next;
+    p2=(*head)->next->next;
+    for(;p1!=0;)
+    {
+        if(headFlag)
+        {
+            headFlag=0;
+            (*head)->next=0;
+        }
+        p1->next=(*head);
+
+        (*head) =p1;
+        p1 =p2;
+        if(p2!=0)
+            p2=p2->next;
+    }
+}
+
 //删除所有节点
 void Delete_all_node(struct studentNode** head_p)
 {
