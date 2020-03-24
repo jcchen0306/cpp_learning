@@ -11,7 +11,7 @@ public:
     char* name;
 
     animalClass();
-    ~animalClass();
+    virtual ~animalClass();
     void get_weight();
     virtual void makeSound();      //是虚函数而不是纯虚函数，就要该类的实现也要有
     virtual void eat()=0;          //纯虚函数，父类不实现该功能，但是要留一个接口给派生类，派生类在实例化时，
@@ -122,6 +122,9 @@ int main()
         group[i]->eat();
         group[i]->makeSound();
     }
+
+    delete group[0];
+    delete group[1];
 }
 
 
@@ -134,4 +137,8 @@ int main()
 //非虚函数调用哪个实现,看指针是哪个类型. 
 
 //某一个类,如果包含了一个虚函数方法,要么自己实现.要么=0.  相当于0也是一种实现,我们叫纯虚.
+
+//如果要利用多态功能,就是父类有virtual函数,那就要在父类析构函数前加virtual,才能在父类指针上调用 delete时,能够执行子类的析构函数.
+//对于有继承的类, 声明子类对象时,先调用父类构造函数,在调用子类构造函数.
+//删除对象时,先调用子类析构函数,在调用父类析构函数.
 
