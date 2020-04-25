@@ -1,0 +1,3 @@
+1、Python启动
+  两种方式，第一种是命令行运行 jupyter notebook
+  第二种是在vs code打开，这种方式需要配置，以后再弄。

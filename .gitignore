@@ -5,3 +5,4 @@ CMakeLists.txt.user
 *.weights
 build/
 .ipynb_checkpoints/
+pynb/.ipynb_checkpoints/
