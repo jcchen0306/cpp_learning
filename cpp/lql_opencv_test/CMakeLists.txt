@@ -12,7 +12,7 @@ find_package(OpenCV REQUIRED)
 #这一行是添加opencv的声明的头文件路径
 include_directories(./include ${OpenCV_INCLUDE_DIRS} )
 
-add_executable(${PROJECT_NAME} src/test.cpp)
+add_executable(${PROJECT_NAME} src/open_show_edge.cpp)
 
 #这一行是为编译生成的可执行程序，中的调用的opencv的函数的实现，在opencv的lib中去链接查找。
 target_link_libraries(${PROJECT_NAME}
