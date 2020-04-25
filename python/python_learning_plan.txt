@@ -1,3 +1,21 @@
 1、Python启动
   两种方式，第一种是命令行运行 jupyter notebook
   第二种是在vs code打开，这种方式需要配置，以后再弄。
+
+2、anaconda下的Python环境，用jupyter notebook启动时，opencv自带的imshow有库依赖错误问题，解决方案是：
+  用matplotlib中的pyplot来显示图像
+
+  import matplotlib.pyplot as plt    #导入依赖库
+  import cv2 as cv
+  cv_rgb = cv.cvtColor(img,cv.COLOR_BGR2RGB)  #opencv的颜色3通道的排列顺序是BGR，matplotlib的是RGB，显示的时候数据要转换顺序
+  cv_gray= cv.cvtColor(img,cv.COLOR_BGR2GRAY)  #彩色转换为黑白
+  plt.imshow(cv_rgb)  #显示彩色图像
+  plt.imshow(cv_gray,'gray')  #显示黑白图像
+
+  cv.imwrite('messigray.png',cv_gray)#保存灰度图
+  cv.imwrite('messigray.png',img) #保存彩色图
+
+3、opencv的Python版本和C++版本的函数功能对应的函数名是一样的，但是形参不一样。
+  所以先学有中文资料的Python版opencv，理解各个函数到底做什么用的。
+  函数功能理解了之后，再用C++版本去写。
+  此文档，主要用来列清楚，每一种opencv对应的函数功能的描述，就是说清楚，什么函数名，用来干嘛。
