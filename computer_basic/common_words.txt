@@ -1,0 +1,442 @@
+1.github
+   1.code  n.代码
+   2.action  n.动作，行为
+   3.description n. 描述
+   4.website n.网站
+   5.overview  n. 大体轮廓 ，概括           
+   6.repository n.仓库         
+   7.project     n.项目        
+   8.package     n.软件包       v.打包
+   9.star         n.星星 v.加星，点赞       
+   10.follower      n.跟随者(关注了自己的人)     
+   11.following      v.跟随（自己关注的人）     
+   12.pull     v.拉取，获取             
+   13.request   n.请求   v.请求         
+   14.lssue    n.问题               
+   15.marketplace  n.市场 ，商店      
+   16.explore    v.探索，搜寻，查找         
+   17.popular     adj.流行的        
+   18.byte        n.字节        
+   19.pointer     n.指针        
+   20.network     n.网络        
+   21.software    n.软件        
+   22.class        n.类       
+   23.diff          n.差异  v.找差异      
+   24.inheritance   n.继承      
+   25.polymorphism    n.多态    
+   26.tip            n.技巧    
+   27.stack          n.栈     
+   28.heap            n.堆    
+   29.function        n.函数功能    
+   30.template        n.模板    
+   31.thread           n.线程   
+   32.process          n.进程   
+   33.latest        adj.最新的
+   34.topic       n.话题
+   35.provide   v.提供
+   36.wiki        n.百科
+   37.security     n.安全
+   38.insight      n.观察力，仔细看
+   39.set      n.集合，一群（几个东西构成的一个整体叫集合）
+   40.notify   v.通知
+   41.only    adv.只有
+   42.link    v.连接
+   43.back      adv.返回，回去
+   44.forward  adv.向前
+   45.reload   v.重新加载
+   46.save     v.保存
+   47.print    v.打印
+   48.cast     
+   49.translate   v.翻译
+   50.inspect       v.检查
+   51.proxy    n.代理
+   52.frame    n.帧
+   53.view     v.查看
+   54.page    n.网页，页面
+   55.source  n.资源，源代码
+   56.fork   v.分叉（复制别人的仓库到自己的账号下面）
+   57.repository   n.仓库
+   58.import    v.导入
+   59.gist      n.主旨，要点
+   60.issue      n.问题
+   61.profile    n.轮廓，个人信息
+   62.feature     n.特征
+   63.preview      v.预览
+   64.sign     v.签字（sign in 登录;sign up 注册）
+   65.explore  v. 搜索，查找 
+   66.count    v.计数
+   67.contribution  n.贡献
+   68.activity   n.活动
+   69.period  n.周期，一段时间
+   70.yet       adv.任然，还（not yet 还没)
+   71.commit   v.提交
+   72.show    v.展示
+   73.more    adj.更多
+   74.guide   v.向导
+   75.git      （软件名）
+   76.hub     n.收集,集线器（github 是git的仓库收集到一起的地方）
+   77.unexpected  adj. 意料之外的，不期望的
+   78.term    n.关键字，问题
+   79.privacy   n.个人隐私
+   80.security  n.安全 
+   81.status     n.状态
+   82.contact   v.联系，n.联系人
+   83.pricing   v.报价
+   84.APL=(A Programming Language)
+   65.training   v.练习，训练
+   66.blog    n.博客
+   67.package  n.软件包，v.打包 
+   70.release   n.发行版  v.发行 
+   71.ipynb     （不是单词,python jupyter  notebook的文件扩展名）
+   72.checkpoint   n.检查点
+   73.titled   adj. 有名字的
+   74.cigarette  n.烟草
+   75.order  n.订单 v.订购
+   76.info   （information的缩写）
+   77.cuda
+   78.ignore  v.忽视
+   79.clone   v.复制，克隆
+   80.import  v.导入
+   81.create  v.创建
+   82.repository
+   83.sign
+   84.access  n.访问权限
+   85.webhooks  
+   86.integration   n.集成
+   87.deploy     v.部署
+   88.key    adj.关键的
+   89.secret  n.秘密
+   90.limit    n.极限
+   91.setting  v.设置
+   92.social   adj.社交的
+   93.preview  
+   94.upload  v.上传
+   95.image   n.图像
+   96.rename   v. 重命名
+   97.download   v.下载
+   98.same adj.相同的
+   99.media   n.介质
+   100.customize  v.自定义，定制
+   101.least   adj. 最少的
+   102.should   情态动词. 应该
+   103.best   adj. 最好的
+   104.display  v.显示
+
+2.vscode 
+   1.file  n.文件
+   2.window   n.窗口
+   3.folder   n.文件夹
+   4.workspace  n.工作空间
+   5.recent   adj.最近的
+   6.save    v.保存
+   7.auto    adj. 自动
+   8.preference   n.设置喜好的参数
+   9.revert    v.撤回
+   10.close    n.关闭
+   11.editor    n.编辑器
+   12.exit   v.退出
+   13.selection   n.选择
+   14.view    n.查看，视窗
+   15.run   v.运行
+   16.terminal   n.终端
+   17.undo     v.撤回
+   18.copy   v.复制
+   19.cut    v.剪切
+   20.paste   v.粘贴
+   21.find    v.查找 
+   22.replace  v.替换 
+   23.toggle   v.状态切换
+   24.line   n. 直线,流水线
+   25.comment   v.注释，批注
+   26.block  n.块，方块
+   27.emmet  (插件的名字）
+   28.expand  v.展开，拓展
+   29.abbreviation  n.简写，缩写
+   30.select   v.选择 
+   31.shrink   n.收缩  v.缩小
+   32.move   v.移动
+   33.down   adv.向下
+   34.duplicate  n.重复 v.重复 adj.重复 
+   35.cursor  n.光标
+   36.above  prep.在...上面
+   37.below  prep. 在...下面
+   38.occurrence n.出现
+   39.previous  adj.之前的
+   40.switch  v.切换
+   41.multi   adj.多种
+   42.column n.列
+   43.mode  n.模式
+   44.shift  v. 转移，切换
+   45.arrow   n.箭头
+   46.ctrl   
+   47.command  n.命令，指令
+   48.palette    n.面板
+   49.appearance  n.外观
+   50.search  v.搜索 
+   51.extension   n.插件 
+   52.output  v.输出 n.输出 
+   53.debug  v.调试，找程序的错误
+   54.console  n.控制台
+   55.terminal  n.终端 
+   56.word   n.单词
+   57.wrap   v.封装
+   58.minimap  n.小地图
+   59.breadcrumbs  
+   60.render   v.渲染
+   61.whitespace  n.空格键
+   62.control   v.控制 n.控制 
+   63.character   n.字符
+   64.last   adj.上一个，最后一个
+   65.location  n.位置
+   66.group   n.组，群
+   67.symbol  n.符号
+   68.definition  n.定义
+   69.implementation   n.实现
+   70.reference  n.参考
+   71.column  n.列
+   72.bracket  n.括号
+   73.problem  n.问题 
+   74.change  v.改变
+   75.start  v.开始
+   76.without  prep. 没有
+   77.restart   v.重启
+   78.configuration  n.参数配置
+   79.step   n.步
+   80.over    prep. 跨过
+   81.continue  v.继续
+   82.breakpoint  n.断点
+   83.enable  v.使能，激活
+   84.remove  v.删除，移除
+   85.disable  v.不使能，不激活
+   86.install   v.安装
+   87.task    n.任务
+   88.build   v.构建（包含编译和链接）
+   89.active   adj.活动的
+   90.configure   v.配置
+   91.terminate  v.终止，停止
+   92.welocome   v.欢迎
+   93.interactive  v.交互，互动
+   94.playground  n.操场
+   95.documentation  n.文档
+   96.keyboard  n.键盘
+   97.shortcut   n.快捷键
+   98.reference   n.参考 
+   99.introductory  adj. 引导的，介绍的
+   100.trick   n.技巧    
+   101.join   v.加入
+   102.twitter  （国外的微博）
+   103.search    v.搜索 
+   104.feature  n.特征 
+   105.report   n.报告 v.报告 
+   106.license  n.认证
+   107.statement  n.声明
+   108.developer  n.开发者
+   109.tool   n.工具
+   110.explorer   n.搜索工具
+   111.update    v.更新   
+   112.common    adj.常见的，共同的
+   113.ready  adj.准备好的
+   114.custimize  v.自定义 定制 
+   115.launch  v.着陆，登陆
+   116.host   n.主机
+   117.history  n.历史
+   118.branch   n.分支
+   119.tag      v.标签   
+   200.reopen   v.重新打开（带有re都代表重新，再来一次的意识 ）
+
+3.qt
+   1.edit   V.编辑 
+   2.analyze  v.分析
+   3.design  v. 设计
+   4.example   n.例子
+   5.tutorial  n.教程 
+   6.learn   v.学习
+   7.develop  v.开发 
+   8.application   n.应用程序
+   9.creator   n.创建者（qt creator是一款写C++代码的集成开发环境） 
+   10.online  adj. 在线的
+   11.account  n.账户
+   12.blog  n.博客 
+   13.user   n.用户
+   14.type   n.类型
+   15.locate   v.定位
+   16.session  n.会话
+   17.except  adj.除...之外
+   18.visible  adj. 可见的
+   19.undo   v.撤销
+   20.redo   v.重做
+   21.clipboard  n.粘贴板
+   22.delete  v.删除 
+   23.detach  v. 分离
+   24.interrupt   v.打断，干扰
+   25.stop  v.停止 
+   26.abort  v.取消，退出
+   27.break   v.破坏，打断 
+   28.main  adj.主要的
+   29.into  prep.进入
+   30.top  adj.顶端的
+   31.evaluator  n.评估程序
+   32.clang  
+   33.  
+   34.performance  n.性能
+   35.   
+   36.memory  n.内存
+   37.chrome   
+   38.trace   v.跟踪
+   39.format   v.格式化
+   40.viewer   n.查看器
+   41.external  adj.外部的
+   42.attach  v. 附加；附属
+   43.waiting  v.等待
+   44.option   n.选项   
+   45.test    v.测试
+   46.past   adv.过去
+   47.bookmark   n.书签 
+   48.macro  n.宏指令
+   49.form  n.图表，图形
+   50.parse  v.解析
+   51.full   adj.满的
+   52.left  adj.左边的，剩下的
+   53.sidebar  n.侧边栏
+   54.right   adj.右边的
+   55.style   n.风格
+   56.view  n.视窗   
+   57.panel n.面板 
+   58.split  v.分割
+   59.side   n.傍边
+   60.current  adj.当前的
+   61.provious  adj.之前的 
+   62.forword  adv. 向前 
+   63.content   n.内容
+   64.index   n.索引，指示标志
+   65.context  n.上下文环境
+   66.tour   n.旅游
+   67.technical  adj.技术的
+   68.support  n.支持
+   69.bug   n.程序错误
+   70.system  n.系统
+   71.information  n.信息
+   72.about   prep. 关于
+   73.plugin   n.插件   
+   74.community  n.社区
+   75.general   adj.一般的
+   76.result     n.结果
+   77.version  n. 版本
+   78.native   adj.原生的
+   79.dialog   n.对话框,
+   80.colorDialog   n. 彩色对话框
+   81.module   n.模块
+   82.desired   adj.需要的
+   83.emit   v. 发出，放射
+   84.default  adj. 默认的
+   85.object    n.对象
+   86.declared  adj.被声明的
+   87.hold  v.抓住，持有
+   88.value    n.值 
+   89.construct  v.构建
+   90.instance   n.实例
+   91.  
+   92.property   n.属性
+   93.
+   94.input   v.输入 n.输入  
+   95.   
+   96.grandparent  n.祖父，祖父母
+   97.explicitly   adv. 明确地
+   98.resolved   adj.解析的
+   99.
+   100.item   n.条目
+   101.accepted  adj.接受的
+   102.clicked   adj.点击的
+   103.button   n.按钮
+   104.instead   adj.替代的
+   105.calling  v.调用
+   106.signal   n.信号
+
+4.ubuntu操作系统
+   1.writer    n.打印机
+   2.presentation  n.报告 
+   3.spreadsheet  n.表格 
+   4.fully   adv.满地，全部地
+   5.charged  adj.充电的
+   6.bluetooth  n.蓝牙
+   7.background  n.背景
+   8.   
+   9.notification   n.通知                                                
+   10.search   v.搜索 
+   11.region  n.地域
+   12.  
+   13.access   n.访问权限
+   14.sharing  v.共享
+   15.sound   n.声音
+   16.power  n.电量
+   17.device  n.设备
+   18.detail  n.细节
+   19.cable   n.网线
+   20.unplugged  adj.未插入的
+   21.set    n.集合 
+   22.mobile  n.移动 
+   23.unknown   adj.未知的
+   24.hide   v.隐藏
+   25.overlap  v.重叠
+   26.position  n.位置 
+   27.screen  n.屏幕
+   28. 
+   29.popup    n.弹窗
+   30.lock   v.锁屏
+   31.archive  n.历史版本库
+   32.manager   n.管理员
+   33.backup    n.备份    
+   34.
+   35.designer  n.设计软件
+   36.desktop   n.桌面
+   37.
+   38.
+   39.updater  n.更新工具 
+   40.
+   41.software   n.软件
+   42.dict    n.字典
+   43.calendar  n.日历
+   44.password   n.密码
+   45.terminal    n.终端 
+   46.format      n.格式 
+   47.source     n.源代码      
+   48.manage    v.管理 
+   49.visual    adj.可视化的
+   50.studio    n.工作室
+   51.high     adj.高的
+   52.contrast  n.对比度
+   53.large    adj.大的
+   54.cursor    n.光标 
+   55.zoom     v.放缩（zoom in 放大  ；zoom out 缩小）
+   56.sound   n.声音 
+   57.alert   n.警报  
+   58.blinking  v.闪烁
+   59.assist   v.帮助
+   60.mouse    n.鼠标
+   61.click   v.点击 
+   62.double   adj.双倍的
+   63.delay    v.延迟
+   64.
+   65.
+   66.
+   67.
+   68.pocket  n.口袋
+   69.foursquare  n.正方形
+   70.service    n.服务   
+   71.usage    n.用途，使用
+   72.purge     v. 清除
+   73.trash    n. 垃圾
+   74.temporary   adj.临时的，暂时的
+   75.connectivity  n.链接
+   76.checking   v.检查
+   77.allow    v.让
+   78.over     prep.在...之上
+
+5.常用变量和函数的单词
+
+6.编译和语法报错常见单词
+
+   
+
+   
+
