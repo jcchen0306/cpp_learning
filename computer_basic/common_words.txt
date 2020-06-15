@@ -109,7 +109,7 @@
    90.limit    n.极限
    91.setting  v.设置
    92.social   adj.社交的
-   93.preview  
+   93.preview  v.
    94.upload  v.上传
    95.image   n.图像
    96.rename   v. 重命名
@@ -168,7 +168,7 @@
    43.mode  n.模式
    44.shift  v. 转移，切换
    45.arrow   n.箭头
-   46.ctrl   
+   46.   
    47.command  n.命令，指令
    48.palette    n.面板
    49.appearance  n.外观
@@ -276,12 +276,12 @@
    29.into  prep.进入
    30.top  adj.顶端的
    31.evaluator  n.评估程序
-   32.clang  
+   32. 
    33.  
    34.performance  n.性能
    35.   
    36.memory  n.内存
-   37.chrome   
+   37.  
    38.trace   v.跟踪
    39.format   v.格式化
    40.viewer   n.查看器
@@ -432,11 +432,49 @@
    77.allow    v.让
    78.over     prep.在...之上
 
-5.常用变量和函数的单词
 
-6.编译和语法报错常见单词
 
-   
+5.编译和语法报错常见单词
+
+6.常用变量和函数的单词
+   1.
+   2.
+   3.
+   4.
+   5.
+   6.
+   7.
+   8.
+
+
+7.Qt库的相关的单词
+   1.set   v.设置 
+   2.title    n.标题
+   3.slider   n.滑动条
+   4.spin      v.旋钮
+   5.widget    n. 窗口显示部件
+   6.connect   v.连接
+   7.range   n.范围
+   8.application  n.应用
+   9.layout   n.布局
+   10.signal   n.信号
+   11.slot     n.槽  ,接收信号做出响应
+   12.value    n.值
+   13.setup    v.设置
+   14.button   n.按钮
+   15.click    v.点击
+   16.quit     v.退出
+   17.dialog   n.对话框  
+   18.sort     v.排序
+   19.label    n.标签
+   20.template  n.模板
+   21.source    n.源代码
+   22.show     v.显示
+   23.pushbutton   n.按钮
+   24.object    n.对象
+   25.   
+
+    
 
    
 

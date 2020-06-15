@@ -1,0 +1,75 @@
+1、在所有要使用Qt信号和槽的class的中，class申明内部最前面一定要加上Q_OBJECT宏。信号和槽是一种高级接口，应用于对象之间的通信，它是 QT 的核心特性，也是 QT 区别于其它工具包的重要地方。信号和槽是 QT 自行定义的一种通信机制，它独立于标准的 C/C++ 语言，因此要正确的处理信号和槽，必须借助一个称为 moc（Meta Object Compiler）的 QT 工具，该工具是一个 C++ 预处理程序，它为高层次的事件处理自动生成所需要的附加代码。
+   所有从 QObject 或其子类 ( 例如 Qwidget) 派生的类都能够包含信号和槽。当对象改变其状态时，信号就由该对象发射 (emit) 出去，这就是对象所要做的全部事情，它不知道另一端是谁在接收这个信号。这就是真正的信息封装，它确保对象被当作一个真正的软件组件来使用。槽用于接收信号，但它们是普通的对象成员函数。一个槽并不知道是否有任何信号与自己相连接。而且，对象并不了解具体的通信机制。
+
+2、所有继承Qt本身QObject的class，必须在类的声明最前端包含宏Q_OBJECT。如果不包含，就不能使用信号和槽。
+
+3、用Qt forms来拖拽设计UI的C++代码原理。
+   通过Qt forms来拖拽设计UI，会根据UI文件中的对象包含关系，来生成一个ui_mainwindow.h。这个文件中包含了class Ui_MainWindow的声明，和它的两个重要的成员函数的实现。
+   
+   整个代码最终会有3个重要的类。
+   class Ui_MainWindow： 根据ui文件生成的class，在ui_mainwindow.h文件中，包含了拖拽到ui文件中的所有对象和关系。
+   class Ui::MainWindow ： 简单地，完全地继承于 class Ui_MainWindow，在ui_mainwindow.h文件中，最简单，自己专有的申明是空的。只是起了一个中间转接的作用。
+   class MainWindow : 一个继承于QMainWindow的主窗口类。这个class中包含了一个类型为Ui::MainWindow成员变量对象（其实就是类型为Ui_MainWindow的成员变量对象）。在该MainWindow的构造函数中，调用Ui::MainWindow(即Ui_MainWindow)的方法setupUi，调用时的参数为该MainWindow的this指针，功能是先将Ui::MainWindow(即Ui_MainWindow)中的控件对象挂载到自身的centralwidget上(包含了手动拖拽到ui文件中的所有控件对象，在class Ui_MainWindow的方法setupUi中被挂载到了centralwidget上)。然后通过 MainWindow 的 setCentralWidget等方法，将setupUi中已经搭建好的centralwidget，挂载到 MainWindow对象上。最后测试main函数中直接用MainWindow的 show方法，就可以显示挂在到上面的centralwidget，即包含了手动拖拽到ui文件中的所有控件对象。
+   
+   理论上来说，是可以跨过Ui::MainWindow，而直接在MainWindow中使用 Ui_MainWindow类型。
+
+4、Qt creator 中的UI forms 文件生成的C++代码结构分析。
+   UI文件对应着最顶层是一个类，类型首先默认定为QMainWindow(最终其实是没有类型的，或者说它的类型是完全自定义，和QMainWindow无关)。通过右上角的一个对象Object和类Class列表，可以更改该实例对象的名字。根据对象的名字，例如xxx, 最后该UI文件会生成一个 Ui_xxx 的类。
+   顶层对象 xxx (其实是后期一个 Ui_xxx 的类)里面， 默认包含了一个类型为 Qwidget，名称为centralwidget的对象(其实该centralwidget后期是 Ui_xxx 类的一个成员指针变量)。该指针变量名centralwidget可以在右上角的一个对象Object和类Class列表中，选中centralwidget，鼠标右键单击，选择 change objectNames来改。这个地方objectNames改了后， Ui_xxx 的类里面的Qwidget指针变量就也改了。该Qwidget对象指针是默认显示的窗口，是不能删掉的。
+   此后，通过鼠标拖拽到UI中的所有控件，都是Ui_xxx类里面的对应类型的成员变量指针。这些指针指向的对象实例，是在setupUi中通过 new来构建，并且挂载到上述的Qwidget对象上。在右上角的一个对象Object和类Class列表中，改了这些控件的objectNames后， Ui_xxx类里的对应类型控件的指针名字也同步改动。
+   所有鼠标拖拽到UI中的控件，都是Ui_xxx的成员变量指针，但是图形显示时，是先挂载到centralwidget上，然后 centralwidget 挂到主函数中 QMainWindow上。所以在右上角的对象Object和类Class列表中，所有鼠标拖拽到UI中的控件是显示在centralwidget下面。
+   Ui_xxx中 setupUi的形参是父类QMainWindow的指针，但是 MainWindow在构造时，调用setupUi传进去的参数是子类MainWindow对象的指针。如果子类MainWindow没有重新实现setupUi中要调用的父类QMainWindow的方法，那么就不会触发多态。
+
+5、Qt forms UI文件中的控件布局技巧。
+   UI布局管理，还有很多要摸索的。 主要是把握好三大要素：布局，弹簧，伸缩比例。
+   新建一个UI文件，如果想让layout占满整个窗体，可以一开始就通过右上角的一个对象Object和类Class列表，选中所第一个对象，例如Dialog或者MainWindow，鼠标右键，选择 Layout → layout in a grid。Layout → adjust size可是使设计时，top-level的窗体大小就会根据控件大小来自动调整。
+
+   同时，如果想要控件之间有自定义的严格的位置关系，就用 group box； 如果想要控件之间相对位置固定，但大小可以变化，就用layout和spacer。
+
+   用layout把控件捆绑起来后，可在右上角的对象Object和类Class列表中，选中那个layout，鼠标右键 layout → break layout，这样可以只删除layout，不删除里头的控件。
+
+   竖着分布的控件用Vertical layout，横着分布的用Horizontal layout。横竖多行多列 都有的用grid layout，每个网格的大小都可改变。多行两列用form layout，但只有最右侧的一列网格会改变大小。
+
+   如果需要多个控件的大小能够在程序运行的时候调整相对大小，就用 splliter。splliter是和layout捆绑帮到一起的，用法是，选定拖到form里的几个控件，然后点击上边栏里头的layout horizontally in splliter，选定的控件就会自动排布到一个水平分布，且运行是能够用splliter调整每个控件的相对大小。
+
+   
+
+   理论上右上角的对象Object和类Class列表中，每个对象都要有的layout(包括顶层对象 QMainWindow或者Qdialog)，没有layout的对象，对象名字左侧会有一个layout被暗红色标识标记禁用。
+
+   UI文件生成的class Ui_MainWindow，理论上是可以独立与Ui文件的使用，就是说，有了生成的ui_mainwindow.h，就可以不要Ui文件了。甚至可以在ui_mainwindow.h 中手动调整一些代码，来满足自己的布局要求。
+   
+
+   Ui form 界面上的右侧偏下的property value窗口中显示的一个多级菜单，其实就是选定的一个控件对象的从上到下的继承关系。每一级的继承提供那些属性可以访问。
+
+   https://blog.csdn.net/fanyun_01/article/details/51140812
+
+   https://blog.csdn.net/GG_SiMiDa/article/details/80854983
+
+   https://blog.csdn.net/qq_16234613/article/details/52749204
+
+   https://blog.csdn.net/wxtcstt/article/details/83786841
+
+   https://blog.csdn.net/zhuxiaowei716/article/details/26063797
+
+   https://blog.csdn.net/giselite/article/details/12622429
+
+   https://blog.csdn.net/chouzhou9701/article/details/88563168
+
+   https://blog.csdn.net/jxwzh/article/details/81673223
+
+   https://blog.csdn.net/weixin_34202952/article/details/86187251
+
+   https://blog.csdn.net/woshiwangxin0/article/details/78659209
+
+   https://blog.csdn.net/sinat_36420785/article/details/61432531
+   理论上通过代码来布局和通过Ui拖控件来布局，都是可行，也是各有千秋的。
+
+
+6、Qt 中new出来的控件，如果带了初始化父对象指针参数，那么只父对象析构删除时，能够自动删除子对象。QMainWindow 和 QDialog及其子类为窗口类型，没有父部件，他们又成为 top-level-widget，顶级部件。
+
+   
+
+
+   
+   
+ 
