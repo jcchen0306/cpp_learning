@@ -22,7 +22,7 @@
 
 5、Qt forms UI文件中的控件布局技巧。
    UI布局管理，还有很多要摸索的。 主要是把握好三大要素：布局，弹簧，伸缩比例。
-   新建一个UI文件，如果想让layout占满整个窗体，可以一开始就通过右上角的一个对象Object和类Class列表，选中所第一个对象，例如Dialog或者MainWindow，鼠标右键，选择 Layout → layout in a grid。Layout → adjust size可是使设计时，top-level的窗体大小就会根据控件大小来自动调整。
+   新建一个UI文件，如果想让layout占满整个窗体，可以一开始就通过右上角的一个对象Object和类Class列表，选中所第一个对象，例如Dialog或者MainWindow，鼠标右键，选择 Layout → layout in a grid。Layout → adjust size可是使设计时，top-level的窗体大小就会根据控件大小来自动调整，这个时候，centralwidget的左侧会有一个layout的符号激活。
 
    同时，如果想要控件之间有自定义的严格的位置关系，就用 group box； 如果想要控件之间相对位置固定，但大小可以变化，就用layout和spacer。
 
@@ -67,6 +67,8 @@
 
 6、Qt 中new出来的控件，如果带了初始化父对象指针参数，那么只父对象析构删除时，能够自动删除子对象。QMainWindow 和 QDialog及其子类为窗口类型，没有父部件，他们又成为 top-level-widget，顶级部件。
 
+7、windows下使用qt QMediaPlayer，需要安装一个音视频解码器，K-lite codec pack比较好用。
+   Linux下的GStreamer 1.0时，拖动窗口大小时，QMediaPlayer会有报错信息 QWidget::paintEngine: Should no longer be called。windows下没有，估计是解码器或者绘图卡住导致的错误。
    
 
 
