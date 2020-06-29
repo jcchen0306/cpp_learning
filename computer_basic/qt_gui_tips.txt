@@ -70,6 +70,11 @@
 7、windows下使用qt QMediaPlayer，需要安装一个音视频解码器，K-lite codec pack比较好用。
    Linux下的GStreamer 1.0时，拖动窗口大小时，QMediaPlayer会有报错信息 QWidget::paintEngine: Should no longer be called。windows下没有，估计是解码器或者绘图卡住导致的错误。
    
+8、qt creator 自带的项目管理文件
+   常用的项目管理文件有三种，这三种文件都是用来进行依赖管理
+   windows 下的 microsoft visual studio 的sln文件
+   linux 下的CMakeLists.txt文件
+   qt creator 用的 pro 文件
 
 
    

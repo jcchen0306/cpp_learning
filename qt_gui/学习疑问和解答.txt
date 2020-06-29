@@ -1,0 +1,4 @@
+1、qt creator的项目管理文件是什么？怎么写？
+R：qt creator的项目管理文件是pro文件，每一个demo项目都有pro文件，直接模仿即可。
+
+2、
