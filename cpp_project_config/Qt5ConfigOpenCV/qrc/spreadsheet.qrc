@@ -1,0 +1,13 @@
+<RCC>
+<qresource>
+    <file>../data/icon/icon.png</file>
+    <file>../data/icon/new.png</file>
+    <file>../data/icon/open.png</file>
+    <file>../data/icon/save.png</file>
+    <file>../data/icon/cut.png</file>
+    <file>../data/icon/copy.png</file>
+    <file>../data/icon/paste.png</file>
+    <file>../data/icon/find.png</file>
+    <file>../data/icon/gotocell.png</file>
+</qresource>
+</RCC>
