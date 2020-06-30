@@ -1,0 +1,2 @@
+1、QApplication：主要功能；主要的成员函数
+2、QLabel：

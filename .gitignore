@@ -7,3 +7,4 @@ build/
 .ipynb_checkpoints/
 pynb/.ipynb_checkpoints/
 .vscode/
+*.pro.user
