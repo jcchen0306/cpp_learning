@@ -2,3 +2,9 @@
 
 1、QApplication：
 2、QLabel：
+3、QButton：
+4、QHBoxLayout：
+5、QSlider：
+6、QSpinBox：
+7、QWidget：
+8、
