@@ -380,7 +380,7 @@
    25.overlap  v.重叠
    26.position  n.位置 
    27.screen  n.屏幕
-   28. 
+   28.inspect  v. 检查
    29.popup    n.弹窗
    30.lock   v.锁屏
    31.archive  n.历史版本库
@@ -389,10 +389,10 @@
    34.
    35.designer  n.设计软件
    36.desktop   n.桌面
-   37.
-   38.
-   39.updater  n.更新工具 
-   40.
+   37.restore   v. 恢复；还原
+   38.missing    adj. 丢失的;  被去除的
+   39.restore missing file   恢复丢失的文件
+   40.updater  n.更新工具 
    41.software   n.软件
    42.dict    n.字典
    43.calendar  n.日历
@@ -416,10 +416,10 @@
    61.click   v.点击 
    62.double   adj.双倍的
    63.delay    v.延迟
-   64.
-   65.
-   66.
-   67.
+   64.extract here   解压到当前文件夹
+   65.compress    v.压缩
+   66.send    v.发送
+   67.property   n.属性
    68.pocket  n.口袋
    69.foursquare  n.正方形
    70.service    n.服务   
@@ -437,14 +437,9 @@
 5.编译和语法报错常见单词
 
 6.常用变量和函数的单词
-   1.
-   2.
-   3.
-   4.
-   5.
-   6.
-   7.
-   8.
+ 
+   
+
 
 
 7.Qt库的相关的单词
@@ -472,7 +467,26 @@
    22.show     v.显示
    23.pushbutton   n.按钮
    24.object    n.对象
-   25.   
+   25.
+   26.application  n.应用程序
+   27.layout    n.布局
+   28.slider    n.滑动条
+   29.spin        n.旋转
+   30.Widget    n.窗口部件
+   31.set         v.设置
+   32.range    n.范围
+   33.object     n.对象
+   34.connect  v. 连接
+   35.value     n.值
+   36.change    v.改变
+   37.box       n.盒子
+   38.execute  v.运行  ，执行
+   39.source   n.源代码
+   40.push     v. 按，推
+   41.button   n.按键
+   42.signal   n.信号
+   
+    
 
     
 
