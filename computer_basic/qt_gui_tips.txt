@@ -22,7 +22,7 @@
 
 5、Qt forms UI文件中的控件布局技巧。
    UI布局管理，还有很多要摸索的。 主要是把握好三大要素：布局，弹簧，伸缩比例。
-   新建一个UI文件，如果想让layout占满整个窗体，可以一开始就通过右上角的一个对象Object和类Class列表，选中所第一个对象，例如Dialog或者MainWindow，鼠标右键，选择 Layout → layout in a grid。Layout → adjust size可是使设计时，top-level的窗体大小就会根据控件大小来自动调整，这个时候，centralwidget的左侧会有一个layout的符号激活。
+   新建一个UI文件，如果想让layout占满整个窗体，可以一开始就通过右上角的一个对象Object和类Class列表，选中所第一个对象，例如Dialog或者MainWindow或者widget，鼠标右键，选择 Layout → layout in a grid。Layout → adjust size可使设计时，top-level的窗体大小就会根据控件大小来自动调整，这个时候，Dialog或者MainWindow或者widget的左侧会有一个layout的符号激活。Dialog或者MainWindow或者widget能够通过选择 Layout → layout in a grid 布满整个窗体的前提是：Dialog或者MainWindow或者widget中已经添加有控件。
 
    同时，如果想要控件之间有自定义的严格的位置关系，就用 group box； 如果想要控件之间相对位置固定，但大小可以变化，就用layout和spacer。
 
