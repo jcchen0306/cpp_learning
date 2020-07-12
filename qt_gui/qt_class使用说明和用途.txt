@@ -7,4 +7,6 @@
 5、QSlider：
 6、QSpinBox：
 7、QWidget：
-8、
+8、QCheckBox
+9、QLineEdit
+10、QPushButton

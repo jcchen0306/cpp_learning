@@ -276,10 +276,10 @@
    29.into  prep.进入
    30.top  adj.顶端的
    31.evaluator  n.评估程序
-   32. 
-   33.  
-   34.performance  n.性能
-   35.   
+   32.find  v. 查找
+   33.dialog  n. 对话框
+   34.chapter  n.章，通常缩写为chap
+   35.performance  n.性能  
    36.memory  n.内存
    37.  
    38.trace   v.跟踪
