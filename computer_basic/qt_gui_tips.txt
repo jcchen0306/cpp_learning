@@ -75,8 +75,23 @@
    windows 下的 microsoft visual studio 的sln文件
    linux 下的CMakeLists.txt文件
    qt creator 用的 pro 文件
-
-
    
-   
- 
+9、qt在信号和槽之间建立连接的4种方式
+   1) UI界面右键点击控件，选择“转到槽“，系统会在cpp中自动添加这个组件对应的槽函数
+   2) 在Ui界面的下面 sigal & slot editor栏中手动添加
+   3) 在代码中使用connect显示添加，一般用法为 connect(第一个对象的指针，
+                                                      SIGNAL(一般是控件发出信号的方法)，
+													  第二个对象的指针，
+													  SLOT(一般是第二个对象的带有SLOT关键字的方法)
+													 )
+	  connect连接信号和槽用法
+	    a) 老方法：connect(m_pBtn,SIGNAL(sigClicked(bool)),this,SLOT(onClicked(bool)));
+	    b) 新方法：connect(m_pBtn,&MyButton::sigClicked,this,&Widget::onClicked); 此时信号没有指明形参类型，如果被重载了，需要用第一种方法。
+	    c) lambda写法，主要针对匿名函数。
+													 
+   4)使用on_对象名_事件名 隐式连接，以QPushButton为例，直接定义
+     void on_pushButton_clicked()
+	 {
+         //do something
+     }
+	 不需要用connect来连接。但是事件名必须是控件对象已经有的，此方法和第1种，第2种方法类似。
