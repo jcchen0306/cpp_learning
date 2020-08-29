@@ -17,7 +17,7 @@
    16.explore                              v.探索，搜寻，查找         
    17.popular                              adj.流行的        
    18.byte                                 n.字节        
-   19.pointer                              n.指针        
+   19.pointer                              n.指针       
    20.network                              n.网络        
    21.software                             n.软件        
    22.class                                n.类       
@@ -430,19 +430,31 @@
    75.connectivity                         n.链接
    76.checking                             v.检查
    77.allow                                v.让
-   78.                         
+   78. default                             n.默认值
 
 
 
 5.编译和语法报错常见单词
 
-6.常用变量和函数的单词
- 
-   
+6.常用变量和函数的单词（自定义过程中非常用的单词，具有随意性）
+   1.go to cell dialog       转到单元格对话框
+   2.view                    视图
+   3.const                   n. 常量
+   4.menu                    n. 菜单
+   5,auto                    n.自动
+   6.default                 n.系统默认值
+   7.minimumSizeHint         是部件Qt建议的最小值
+   8.init                    初始化
+   9.event                   n. 事件；项目
+   10.paint                  v.用绘图程序作画
+   11.graphical              adj.用图（或图表等）表示的
+   12.receive                v. 接收
+   13.system                 n. 制度；系统
+   14.icon                   n. 图标
+   15.
 
 
-
-7.Qt库的相关的单词
+7.Qt库的相关的单词（系统固有的单词基本长不会变每天都用）
    1.set                                   v.设置 
    2.title                                 n.标题
    3.slider                                n.滑动条
@@ -453,7 +465,7 @@
    8.application                           n.应用
    9.layout                                n.布局
    10.signal                               n.信号
-   11.slot                                 n.槽  ,接收信号做出响应
+   11.slot                                 n.槽  ,接收信号做出响应 
    12.value                                n.值
    13.setup                                v.设置
    14.button                               n.按钮
@@ -470,10 +482,46 @@
    25.change                               v.改变
    26.box                                  n.盒子
    27.execute                              v.运行  ，执行                         
-   28.push                                 v. 按，推                              
-    
-    
+   28.push                                 v. 按，推 
+   28.horizontal                           adj.水平的  
+   29.vertical                             adj.垂直的
+   30.radio button                         n. 单选按钮
+   31.check box                            n. 选择框;多选框;
+   32.tree view                            控件
+   33.view                                 视图
+   34.table view                           表格视图
+   35.column view                          列视图
+   36.undo                                 v. 撤消
+   37.container                            n. 容器;集装箱;货柜
+   38.scroll                               v. 滚动
+   39.property                             n.属性
+   40.regular expression (QRegExp)         正规表达式
+   41.validator                            n. 验证程序
+   42.cancel                               v.取消;撤销;终止;    
+   43.acceptable                           adj. 可接受的；合意的
+   44.pushButton                           n. 按钮
+   45.radioButton                          单选按钮
+   46.toolButton                           工具按钮
+   47.static                               adj.静态的
+   48.creating                             v.创造
+   49.translucent                          adj.透明的；半透明的
+   50.alien                                adj.外来的
+   51.native                               adj.本地的
+   52.abstract                             adj.抽象的
 
+8、qt说明文档的单词   
+   1.header                                n.页眉
+   2.inherit                               v. 继承
+   3.abstract                              v. 摘要；提取
+   4.member                                n. 成员
+   5.documentation                         n. 必备资料，证明文件；计算机设备或程序的）说明书
+   6.access                                v.访问，存取(计算机文件)
+   7.static                                adj. 静态的
+   8.composite                             adj. 复合的，合成的
+   9.screen                                n. 屏，幕；
+   10.rectangular                          adj. 矩形的；成直角的
+   11.clip                                 v. 剪；剪掉
+   12.calendar                             n. 日历；日程表
     
 
    
